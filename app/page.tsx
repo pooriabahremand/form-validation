@@ -1,11 +1,17 @@
-import { Welcome } from '../components/Welcome/Welcome';
-import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
+import Link from 'next/link';
 
-export default function HomePage() {
+export default function Page() {
   return (
     <>
-      <Welcome />
-      <ColorSchemeToggle />
+      <button type="button">
+        <Link href="regular-form">Regular form</Link>
+      </button>
+      <button type="button">
+        <Link href="zod-form">Zod form</Link>
+      </button>
+      <button type="button">
+        <Link href="stepper-form">Stepper form</Link>
+      </button>
     </>
   );
 }
